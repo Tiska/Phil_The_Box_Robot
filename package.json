@@ -4,7 +4,7 @@
   "description": "A filling box robot",
   "main": "robot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node robot.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Tiska/Phil_The_Box_Robot/issues"
   },
-  "homepage": "https://github.com/Tiska/Phil_The_Box_Robot#readme"
+  "homepage": "https://github.com/Tiska/Phil_The_Box_Robot#readme",
+  "dependencies": {
+    "reduce": "^1.0.1"
+  }
 }

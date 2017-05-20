@@ -1,0 +1,22 @@
+{
+  "name": "xspeedit",
+  "version": "1.0.0",
+  "description": "A filling box robot",
+  "main": "robot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tiska/Phil_The_Box_Robot.git"
+  },
+  "keywords": [
+    "robot"
+  ],
+  "author": "Adrien Body",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tiska/Phil_The_Box_Robot/issues"
+  },
+  "homepage": "https://github.com/Tiska/Phil_The_Box_Robot#readme"
+}

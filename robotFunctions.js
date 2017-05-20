@@ -31,7 +31,7 @@ function dumbRobot (packets,maxBoxSize) {
 
     };
 
-    console.log(utils.printBoxes(boxes,"dumb robot"));
+    console.log(utils.printBoxes(boxes,"Dumb robot"));
 
 };
 
@@ -72,7 +72,7 @@ function gluttonRobot (packets,maxBoxSize) {
 
     };
 
-    console.log(utils.printBoxes(boxes,"glutton robot"));
+    console.log(utils.printBoxes(boxes,"Glutton robot"));
 
 };
 

@@ -7,7 +7,7 @@ function add(a, b) {
 function printBoxes(boxes, robot) {
     let str = '';
     boxes.forEach(function (box, index) {
-        box.forEach(function (packet) {
+        box.getPackets().forEach(function (packet) {
             str += packet.toString();
         });
         str += index != boxes.length-1 ? '/' : '';
@@ -15,12 +15,12 @@ function printBoxes(boxes, robot) {
     return  str + ' => ' + boxes.length + ' cartons utilisés par ' + robot;
 }
 
-function compareNumbers(a, b) {
-    return parseInt(a) < parseInt(b);
+function orderByDecreasingWeight(packets) {
+    return  Array.from(packets).sort().reverse();
 }
 
 module.exports = {
-    add: add,
-    printBoxes: printBoxes,
-    compareNumbers: compareNumbers
+    add,
+    printBoxes,
+    orderByDecreasingWeight
 };

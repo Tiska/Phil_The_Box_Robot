@@ -13,5 +13,6 @@ prompt.get(['articles','tailleCarton'], function (err, result) {
     console.log("Articles : " + packets);
     robots.dumbRobot (packets,maxBoxSize);
     robots.gluttonRobot (packets,maxBoxSize);
+    process.exit();
 });
 

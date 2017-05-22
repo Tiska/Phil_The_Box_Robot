@@ -4,7 +4,8 @@
   "description": "A filling box robot",
   "main": "robot.js",
   "scripts": {
-    "start": "node robot.js"
+    "start": "node robot.js",
+    "test": "mocha tests"
   },
   "repository": {
     "type": "git",

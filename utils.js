@@ -1,7 +1,7 @@
 "use strict";
 
-function add(a, b) {
-    return parseInt(a) + parseInt(b);
+function compareBoxes(a, b) {
+    return a.totalWeight - b.totalWeight;
 }
 
 function printBoxes(boxes, robot) {
@@ -19,8 +19,15 @@ function orderByDecreasingWeight(packets) {
     return  Array.from(packets).sort().reverse();
 }
 
+function controlInputs(packets,maxWeight) {
+    if(Array.from(packets).sort().reverse()[0] > maxWeight){
+        process.exit();
+    }
+}
+
 module.exports = {
-    add,
+    controlInputs,
     printBoxes,
-    orderByDecreasingWeight
+    orderByDecreasingWeight,
+    compareBoxes
 };

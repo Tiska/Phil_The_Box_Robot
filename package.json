@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/Tiska/Phil_The_Box_Robot#readme",
   "dependencies": {
-    "prompt": "^1.0.0",
-    "reduce": "^1.0.1"
+    "prompt": "^1.0.0"
   }
 }

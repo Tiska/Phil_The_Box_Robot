@@ -1,22 +1,26 @@
 'use strict';
 
 const utils = require("./utils.js");
-require("reduce");
 
 class Box {
     
-    constructor(maxSize, packets) {
-        this.maxSize = maxSize;
-        this.packets = packets;
-        this.totalWeight = packets.reduce(utils.add, 0);
+    constructor(maxWeight) {
+        this.maxWeight = maxWeight;
+        this.packets = [];
+        this.totalWeight = 0;
     }
 
-    tryToAdd(packet) {
-        if(this.totalWeight == this.maxSize) {
-            return false;
-        } else if (this.totalWeight + parseInt(packet) <= this.maxSize) {
+    add(packet) {
+        if(this.canAdd(packet)) {
             this.packets.push(packet);
             this.totalWeight += parseInt(packet);
+        }
+    }
+
+    canAdd(packet) {
+        if(this.totalWeight == this.maxWeight) {
+            return false;
+        } else if (this.totalWeight + parseInt(packet) <= this.maxWeight) {
             return true;
         } else {
             return false;
